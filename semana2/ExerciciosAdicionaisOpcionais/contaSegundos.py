@@ -10,4 +10,5 @@ segs_restantes2 = segs_restantes1 % 3600
 
 c = segs_restantes2 // 60         
 d = segs_restantes2 % 60    
-print(a, "dias, ", b, "horas, ", c, "minutos e", d, "segundos.")
+print(a,"dias,",b,"horas,",c,"minutos e",d,"segundos.")
+
