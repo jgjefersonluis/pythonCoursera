@@ -1,4 +1,5 @@
-i = 6
-while (i > 0):          
-    i = i - 3    
-    print (i) 
+teste = True
+while teste:
+    x = int(input("Digite um número: "))
+    if x < 0:
+        teste = True
