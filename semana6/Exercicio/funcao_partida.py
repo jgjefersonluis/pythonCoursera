@@ -15,6 +15,64 @@ def partida():
             pecas_retiradas = usuario_escolhe_jogada(pecas_restantes, m)
             pecas_restantes = pecas_restantes - pecas_retiradas
 
-            
+            if pecas_restantes == 0:
+                vencedor = 0
+                break
+            # jogada computador
+            pecas_retiradas = computador_escolhe_jogada(pecas_restantes, m)
+            pecas_restantes = pecas_restantes - pecas_retiradas
+
+            if pecas_restantes == 0:
+                vencedor = 1
+                break
+        else: # caso que o computador começa a partida
+            print("Computador começa!\n")
+            while pecas_restantes > 0:
+
+                # jogada computador
+                pecas_retiradas = computador_escolhe_jogada(pecas_restantes, m)
+                pecas_restantes = pecas_restantes - pecas_retiradas
+
+                if pecas_restantes == 0:
+                    vencedor = 1
+                    break
+
+                # jogada usuário
+            pecas_retiradas = usuario_escolhe_jogada(pecas_restantes, m)
+            pecas_restantes = pecas_restantes - pecas_retiradas
+
+            if pecas_restantes == 0:
+                vencedor = 0
+                break
+    if vencedor == 1:
+        print("Fim de jogo! O computador ganhou!\n")
+        return 1
+    elif vencedor == 0:
+        print("Fim de jogo! O computador ganhou!\n")
+        return 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+
+        
+ 
 
     
