@@ -37,6 +37,11 @@ def separa_frases(sentencas):
     return frase.split()
 
 
+def separa_palavras(frase):
+    '''A função recebe uma frase e devolve uma lista das palavras dentro da frase'''
+    return frase.split()
+
+
 
 
 
