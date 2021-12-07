@@ -32,6 +32,13 @@ def separa_sentencas(texto):
         del sentencas[-1]
     return sentencas
 
+def separa_frases(sentencas):
+    '''A função recebe uma sentença e devolve uma lista das frases dentro da sentença'''
+    return frase.split()
+
+
+
+
 
 
 
