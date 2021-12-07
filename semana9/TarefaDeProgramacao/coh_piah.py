@@ -12,8 +12,6 @@ def le_assinatura():
     sal=float(input("Entre o tamanho médio de sentença: "))
     sac=float(input("Entre a complexidade média da sentença: "))
     pal=float(input("Entre o tamanho medio de frase: "))
-
-
     return [wal, ttr, hlr, sal, sac, pal]
 
 
@@ -25,9 +23,17 @@ def le_textos():
         textos.append(texto)
         i+=1
         texto=input("Digite o texto"+str(i)+"(aperte enter para sair):")
-
-
     return textos
+
+def separa_sentencas(texto):
+    '''A funçao recebe um texto e devolve uma lista das sentenças dentro do texto'''
+    sentencas=re.split(r'[.!?]+',texto)
+    if sentencas[-1] == '':
+        del sentencas[-1]
+    return sentencas
+
+
+
 
 
 
