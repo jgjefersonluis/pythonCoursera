@@ -9,5 +9,5 @@ while linha <= altura:
         else:
             print(end = " ")
         coluna = coluna + 1
-    print("*")
+    print("*")2
     linha = linha + 1
