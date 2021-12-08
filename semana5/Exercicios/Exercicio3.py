@@ -1,8 +1,6 @@
-def vogal():
-    vogais = a,e,i,o,u,A,E,I,O,U
-    consoante != a,e,i,o,u
-    for vogais in range(vogais,consoante):
-        if A % vogais == a,e,i,o,u,A,E,I,O,U:
-            return True
+def vogal(c):
+    
+    if c == 'a' or c == 'e' or c == 'i' or c == 'o' or c == 'u' or c == 'A' or c == 'E' or c == 'I' or c == 'O' or c == 'U':
+        return True
     else:
         return False
